@@ -8,7 +8,8 @@ su -c '/mvn.sh' dspace
 
 su -c '/ant.sh' dspace
 
-cp -r /opt/dspace/webapps/* /opt/tomcat/webapps/
+cp -r /opt/dspace/webapps/xmlui /opt/tomcat/webapps/
+cp -r /opt/dspace/webapps/solr /opt/tomcat/webapps/
 chown -R tomcat:dspace /opt/dspace/upload
 chown -R tomcat:dspace /opt/dspace/assetstore
 
